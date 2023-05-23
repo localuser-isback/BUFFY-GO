@@ -35,7 +35,7 @@ func main() {
 func proxyHandler(w http.ResponseWriter, r *http.Request) {
 	urlParam := r.URL.String()
 	mainurl := "https://google.com"
-  url := mainurl + urlParam
+  	url := mainurl + urlParam
 
 	req, err := http.NewRequest(r.Method, url, nil)
 	if err != nil {
